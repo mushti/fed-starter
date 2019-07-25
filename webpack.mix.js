@@ -12,10 +12,8 @@ let mix = require('laravel-mix');
  */
 
 mix.setPublicPath('public_html')
-   .js('assets/js/landing.js', 'public_html/js')
-   .sass('assets/sass/landing.scss', 'public_html/css')
-   .copyDirectory('assets/images', 'public_html/images')
-   .copyDirectory('assets/fonts', 'public_html/fonts')
+   .js('source_files/js/landing.js', 'public_html/js')
+   .sass('source_files/sass/landing.scss', 'public_html/css')
    .options({
       processCssUrls: false
    });
